@@ -1,4 +1,6 @@
-FROM williamyeh/java8:latest #TODO switch to fixed version
+FROM williamyeh/java8:latest
+
+CMD ["bash"]
 
 RUN apt-get update -y && \
     apt-get install -y python python-pip dos2unix libfontconfig git --no-install-recommends && \
